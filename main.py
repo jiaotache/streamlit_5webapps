@@ -51,7 +51,7 @@ left_column,right_column = st.columns(2)
 
 left_column.header("Display Image")
 if left_column.checkbox('Show Image'):
-    img = Image.open('/Volumes/外付けSSD1/python/Dr_Imanishi/five_webapps/streamlit_5webapps/Himeji_Castle.jpg')
+    img = Image.open('./Himeji_Castle.jpg')
     left_column.image(img, caption='Himeji Castle',use_column_width=True)
 
 right_column.header("Select Box")
